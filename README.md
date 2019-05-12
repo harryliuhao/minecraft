@@ -7,3 +7,5 @@ Refresh steps:
 5. start the old server. Use the new ip to ssh to the instance
 6. copy the file to ec2: aws s3 cp s3://hao-minecraft-download/minecraft_server.1.14.jar minecraft_server.1.14.jar
 7. update mc.sh with the new jar file name or directly execute: java -Xmx1024M -Xms1024M -jar minecraft_server.1.14.jar nogui
+8. Make sure ops.json wasn't blank from the update. If it was erased, download the backup from s3 bucket
+
